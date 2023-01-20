@@ -3,18 +3,24 @@ body{
     height:270vh;
     background-color:#45119A;
 }
-
+body::-webkit-scrollbar{
+    display:none;
+    -ms-overflow-style:none;
+    scrollbar-width:none;
+}
 .page-title{
-    width:12%;
-    height:auto;
-    background-color:#5BFF76;
+    width:8%;
+    height:5%;
+    background-color:#FFE55B;
     position:absolute;
-    top:1%;
+    top:5%;
     left:1%;
 
 }
 .page-title h4{
+    top:-80%;
     position:relative;
+    left:30%;
     text-align:center;
     font-size:1.2em;
     font-family:'Poppins';
@@ -28,11 +34,13 @@ body{
 .picture-box{
     width:50%;
     height:auto;
-    background-color:#FFE55B;
+    background-color:#5BFF76;
     margin-left:10%;
     display:flex;
     align-items:center;
     justify-content:center;
+    box-shadow: 4px 11px 16px 11px rgba(0,0,0,0.1);
+
 }
 .power-pic{
     width:70%;
@@ -171,7 +179,7 @@ body{
 }
 .social li{
     font-family:"Poppins";
-    font-size:1.3em;
+    font-size:1.1em;
     margin-left:25px;
 }
 .about{
@@ -182,10 +190,12 @@ body{
 .picture-box2{
     width:60%;
     height:300px;
-    background-color:#5BFF76;
+    background-color:#FFE55B;
     display:flex;
     align-items:center;
     justify-content:center;
+    box-shadow: 4px 11px 16px 11px rgba(0,0,0,0.1);
+
 }
 .ash-pic{
     width:70%;
@@ -226,7 +236,7 @@ body{
 }
 .letters-footer{
     margin-top:-7%;
-    margin-left:40%;
+    margin-left:45%;
     font-family:'Poppins';
 }
 .letters-footer h4{
@@ -255,21 +265,52 @@ body{
 .contact h3{
     font-family:'Poppins';
     font-size:1.5em;
+    margin-bottom:2%;
 }
 .social-icons{
     display:flex;
-    font-size:1.6em;
+    font-size:2.5em;
     margin:0;
     padding:0;
-    width:120%;
 }
-.icon1{
-    background-color:white;
-    width:30%;
-    height:55px;
-    justify-content:center;
-    align-items:center;
-    display:flex;
-    border-radius:100%;
-    margin-right:30%;
+.social-icons .icon{
+    margin-right:5%;
+}
+.social-icons .icon1{
+    background-color:#FFE55B;
+}
+.social-icons .icon2{
+    background-color:#F25BFF;
+}
+.social-icons .icon3{
+    background-color:#5BFF76;
+}
+.line2{
+    margin-top:10%;
+    width:250%;
+    height:2px;
+    background-color:black;
+}
+.contact .email{
+    font-family:"Poppins";
+    text-decoration:none;
+    color:black;
+    font-size:1.3em;
+}
+@media (min-width:320px) and (max-width:480px){
+
+    .header{
+    }
+    .picture-box{
+        margin-left:20%;
+    }
+    .letters{
+        text-align:center;
+    }
+    .port-type-1{
+        font-size:1.8em;
+    }
+    .port-type-2{
+        font-size:1.8em;
+    }
 }

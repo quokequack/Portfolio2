@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaTwitter, FaTiktok, FaInstagram} from 'react-icons/fa';
 import SimpleSlider from '../components/SimpleSlider';
 import '../styles/HomeScreen.css';
@@ -7,6 +7,12 @@ import '../styles/HomeScreen.css';
 
 
 export default function HomeScreen(){
+
+    useEffect(()=> {
+        document.title = 'QuokeQuack - Portfolio';
+    }, []);
+
+
     return(
         <body className='homescreen'>
             <div className="page-title">
@@ -82,27 +88,29 @@ export default function HomeScreen(){
                     </h1>
                 </div>
                 <div className="picture-box">
-                    <img className='power-pic' src={require('../img/power.jpg')}/>
+                    <img alt='Power by CHAINSAW MAN' className='power-pic' src={require('../img/power.jpg')}/>
                 </div>
                 <div className='list-section'>
                     <ul className='social'>
-                        <li><a className='link' href="#"> instagram </a></li>
-                        <li><a className='link' href="#"> github </a></li>
-                        <li><a className='link' href="#"> letterboxd </a></li>
+                        <li><a className='link' rel='noreferrer' target='_blank' href="https://www.instagram.com/alaquoke/"> instagram </a></li>
+                        <li><a className='link' rel='noreferrer' target='_blank' href="https://github.com/quokequack"> github </a></li>
+                        <li><a className='link' rel='noreferrer' target='_blank' href="https://letterboxd.com/LolaLaCava_/"> letterboxd </a></li>
                     </ul>
                 </div>
             </div>
             <div className='middle-page'>
                 <div className='about'>
                     <div className='picture-box2'>
-                        <img className='ash-pic' src={require('../img/ash.jpg')}/>
+                        <img alt='Ash Lynx by BANANA FISH' className='ash-pic' src={require('../img/ash.jpg')}/>
                     </div>
                     <div className="text-about">
-                        <p>text text text text text text text text text text text
-text text text text text text text text text text text
-text text text text text text text text text text text
-text text text text text text text text text text text
-text text text text text text text text text text text</p>
+                        <p>Hello guys, my name is Alaquoke, I'm 18 years old and
+                            currently coursing System's Development at Alagoas'
+                            Federal Institute. I'm quit more into Front-End than 
+                            Back-End, but I can do both. I love chicken Cup Noodles 
+                            and Lana del Rey, rock, The Beatles, Harry Potter and 
+                            animes, as you can see :)
+                        </p>
                     </div>
                 </div>
             </div>
@@ -117,19 +125,13 @@ text text text text text text text text text text text</p>
                 <div className='contact'>
                     <h3>Follow Me!</h3>
                     <div className='social-icons'>
-                        <div className='icon1'>
-                            <FaTiktok />
-                        </div>
-                        <div className='icon2'>
-                            <FaInstagram />
-                        </div>
-                        <div className='icon3'>
-                            <FaTwitter />
-                        </div>
+                        <a className='icon'><FaTiktok className='icon1' /></a>
+                        <a className='icon'><FaInstagram className='icon2' /></a>
+                        <a className='icon'><FaTwitter className='icon3' /></a>
                     </div>
                     <div className='line2'></div>
                     <h3> Contact Me! </h3>
-                    <a href="#" target='_blank' className='email'>alaquoke@gmail.com</a>
+                    <a href="mailto:alaquoke@gmail.com" rel='noreferrer' target='_blank' className='email'>alaquoke@gmail.com</a>
                 </div>
                 <div className='letters-footer'>
                     <h4>made by</h4>
