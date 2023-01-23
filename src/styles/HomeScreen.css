@@ -300,17 +300,41 @@ body::-webkit-scrollbar{
 @media (min-width:320px) and (max-width:480px){
 
     .header{
+        flex-wrap:wrap;
+    }
+    .page-title{
+        width:20%;
+        height:4%;
+        top:0.5%;
+    }
+    .page-title h4{
+        top:-50%;
     }
     .picture-box{
-        margin-left:20%;
+        margin-left:5%;
     }
     .letters{
         text-align:center;
+        margin-top:10%;
+        margin-left:6%;
     }
     .port-type-1{
         font-size:1.8em;
     }
     .port-type-2{
         font-size:1.8em;
+        letter-spacing:2px;
+    }
+    .social{
+        padding:0;
+        margin-top:-180%;
+        margin-left:90%;
+    }
+    .social li{
+        font-size:0.6em;
+        margin-left:10px;
+    }
+    .about{
+        flex-wrap:wrap;
     }
 }
