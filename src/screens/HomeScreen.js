@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaTwitter, FaTiktok, FaInstagram} from 'react-icons/fa';
-import SimpleSlider from '../components/SimpleSlider';
-import '../styles/HomeScreen.css';
+import '../styles/HomeScreen.css'
+import '../components/Carousel'
+import Carousel from '../components/Carousel';
 
 
 
@@ -118,7 +119,7 @@ export default function HomeScreen(){
                 <div className='caroussel'>
                     <h2>FIGMA DESIGNS</h2>
                     <div className='line'></div>
-                    <SimpleSlider />
+                    <Carousel />
                 </div>
             </div>
             <div className='footer'>

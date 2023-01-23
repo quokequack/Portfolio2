@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+*{
+    box-sizing:border-box;
+    padding:0;
+}
 body{
     height:270vh;
     background-color:#45119A;
@@ -221,14 +225,14 @@ body::-webkit-scrollbar{
     color:white;
 }
 .end-page .line{
-    width:90%;
+    width:93%;
     height:5px;
     background-color:white;
     margin-top:-1%;
     margin-bottom:1%;
 }
 .footer{
-    width:110%;
+    width:100%;
     height:400px;
     background-color:#FF5252;
     margin-top:10%;
@@ -297,10 +301,20 @@ body::-webkit-scrollbar{
     color:black;
     font-size:1.3em;
 }
+/*mobile*/
 @media (min-width:320px) and (max-width:480px){
-
+    *{
+        box-sizing:border-box;
+        padding:0;
+    }
+    body{
+        height:150vh;
+    }
     .header{
-        flex-wrap:wrap;
+        flex-direction:column-reverse;
+        justify-content:center;
+        align-items:center;
+        margin-top:20%;
     }
     .page-title{
         width:20%;
@@ -311,30 +325,67 @@ body::-webkit-scrollbar{
         top:-50%;
     }
     .picture-box{
-        margin-left:5%;
+        width:60%;
+        height:200px;
+        margin-left:0;
+        margin-top:3%;
+    }
+    .power-pic{
+        width:60%;
     }
     .letters{
+        width:80%;
         text-align:center;
+        margin-left:0;
         margin-top:10%;
-        margin-left:6%;
     }
     .port-type-1{
         font-size:1.8em;
+        margin-top:-4%;
     }
     .port-type-2{
-        font-size:1.8em;
+        margin-top:-4%;
+        font-size:1.5em;
         letter-spacing:2px;
     }
+    .list-section{
+        position:absolute;
+        top:7%;
+        width:100%;
+        background-color:#FFE55B;
+        height:25px;
+    }
     .social{
+        left:48%;
+        top:-20%;
+        position:relative;
         padding:0;
-        margin-top:-180%;
-        margin-left:90%;
+        transform: rotate(0deg);
+        justify-content:center;
+        align-items:center;
     }
     .social li{
-        font-size:0.6em;
-        margin-left:10px;
+        font-size:1em;
     }
     .about{
         flex-wrap:wrap;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        margin-top:5%;
+        margin-left:0;
+    }
+    .footer{
+        height:300px;
+    }
+    .contact .line2{
+        width:90%;
+    }
+    .letters-footer{
+        margin-left:10%;
+        margin-top:-15%;
+    }
+    .letters-footer h1{
+        font-size:1em;
     }
 }
